@@ -6,9 +6,7 @@ export const Category = (props) => {
   useEffect(() => {
     const getThumbnail = async (category) => {
       const data = await axios.get(
-        `https://api.unsplash.com/search/photos?query=${category}&client_id=yCbGXqZc75nV4H1HPLsI0qUTLO3CzjlHFDS4CVgdReM&page=${Math.floor(
-          Math.random() * 10 + 1
-        )}`
+        `https://api.unsplash.com/search/photos?query=${category}&client_id=yCbGXqZc75nV4H1HPLsI0qUTLO3CzjlHFDS4CVgdReM`
       );
       console.log(data.data.results[0].urls.thumb);
       setphotos(data.data.results[0].urls.thumb);
