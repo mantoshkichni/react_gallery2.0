@@ -21,7 +21,7 @@ export const Category = (props) => {
           onClick={() => props.getThePhotos(props.category)}
         >
           <figure class="figure text-uppercase">
-            <img class="img-thumbnail img" src={photos}></img>
+            <img class="img-thumbnail img img1" src={photos}></img>
             <figcaption class="figure-caption text-white fs-5">
               {props.category}
             </figcaption>
